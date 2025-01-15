@@ -1,0 +1,19 @@
+.coursesCard {
+    width: 100%;
+    padding: 50px 40px;
+    background-color: var(--color-teal);
+}
+
+.coursesCard .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.coursesCard .container .coursecard-container {
+    width: 400px;
+    height: 550px;
+    background-color: var(--color-white);
+}

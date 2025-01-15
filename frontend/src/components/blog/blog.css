@@ -1,0 +1,49 @@
+.blog {
+    width: 100%;
+    padding: 100px 40px;
+    background-color: var(--color-white);
+}
+
+.blog .container {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.blog .items {
+    width: 400px;
+    background-color: var(--color-light);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog .items h6 {
+    text-align: start;
+}
+
+.blog .items h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog .items h4 {
+    font-size: 14px;
+}
+
+.blog .items p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.blog .items a {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--color-dark);
+}
