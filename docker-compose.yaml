@@ -24,6 +24,15 @@ services:
     environment:
       - MONGO_URL=${MONGO_URL}
       - JWT_SECRET=${JWT_SECRET}
+  
+  db:
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    networks:
+      - mern_network
+    volumes:
+      - ./university-volume:/data/db
 
 networks:
   mern_network:
