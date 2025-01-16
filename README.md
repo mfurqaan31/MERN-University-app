@@ -38,7 +38,7 @@ It includes the following pages:
 
 ## Running the Application
 
-There are three ways to run this application:
+The application runs on `localhost` by default. Here are the steps for running it:
 
 ### 1. Running Without Docker
 
@@ -49,12 +49,16 @@ There are three ways to run this application:
    npm run dev
    ```
 
+   - Access the frontend at `http://localhost:5173`
+
 2. **Backend**:
    ```bash
    cd backend
    npm install
    npm start
    ```
+
+   - Access the backend at `http://localhost:4000`
 
 ### 2. Running with Docker (Without Docker Compose)
 
@@ -75,6 +79,8 @@ docker network create mern_net
    ```bash
    docker run -it --name=client --network=mern_net -p 5173:5173 frontend:v1
    ```
+
+   - Access the frontend at `http://localhost:5173`
 
 3. To stop the container:
    ```bash
@@ -99,6 +105,8 @@ docker network create mern_net
    docker run -it --name=server --network=mern_net -p 4000:4000 backend:v1
    ```
 
+   - Access the backend at `http://localhost:4000`
+
 3. To stop the container:
    ```bash
    docker stop server
@@ -118,10 +126,14 @@ docker network create mern_net
    docker compose up --build
    ```
 
+   - Access the frontend at `http://localhost:5173`
+   - Access the backend at `http://localhost:4000`
+
 3. To stop the application:
    ```bash
    docker compose down
    ```
 
+---
 # Follow me and Star ⭐ the Repository
 [![GitHub](https://img.shields.io/badge/GitHub-mfurqaan31-black?&logo=github)](https://github.com/mfurqaan31)
